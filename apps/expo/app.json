@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "scheme": "lwj",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "lwj",
+    "slug": "lwj",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#333"
+    }
+  }
+}
