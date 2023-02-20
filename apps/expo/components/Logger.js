@@ -14,21 +14,22 @@ const Logger = logger.createLogger({
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Api-Key': process.env.NEW_RELIC_API_KEY,
+                'Api-Key': NEW_RELIC_API_KEY,
             },
             body: JSON.stringify(props)
         })
         .then(response => {
             if (!response.ok) {
-            throw new Error('network response was not ok');
+                throw new Error('network response was not ok');
             }
             return response.json();
         })
         .then(data => {
-            console.log('Logs sent to new relic:', data);
+            console.log('Logs successfully sent to new relic', data);
         })
         .catch(error => {
             newrelic.recordError(error);
+            console.error(error);
         });
     },
 });

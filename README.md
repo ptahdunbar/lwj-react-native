@@ -2,8 +2,10 @@
 
 # Workshop: Learn with Jason React Native
 
-## Get New Relic API Keys
+## Get API Keys
 - [New Relic](https://one.newrelic.com/launcher/api-keys-ui.api-keys-launcher)
+- [OpenAPI key](https://openai.com/api/)
+- [Replicate api key](https://replicate.com/)
 
 #### Clone the repo and run the app
 ```

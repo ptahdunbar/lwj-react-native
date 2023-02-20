@@ -7,8 +7,9 @@ export default () => {
   const pathname = usePathname();
   const params = useSearchParams();
   useEffect(() => {
-    // newrelic.addPageAction('pageView', { href });
     newrelic.recordBreadcrumb('navigation', { pathname, params });
+    
+    // Example of sending logs to new relic
     Logger.info('navigation', { pathname, params });
   }, [pathname, params]);
   return null;
